@@ -1,0 +1,123 @@
+.nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.904);
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 80px;
+  padding-top: 20px;
+  z-index: 3;
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 40px;
+    flex: 1;
+    img {
+      width: 160px;
+      // margin-bottom: -10px;
+    }
+
+    .tex {
+      color: white;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      font-family: sans-serif;
+      padding-bottom: 7px;
+      font-weight: 500;
+
+      &:hover {
+        border-style: solid;
+        // font-size: 1rem;
+        padding-bottom: 5px;
+        border-style: solid;
+        border-bottom-width: 2px;
+        animation-name: option;
+        animation-duration: 0.2s;
+        border-bottom-color: white;
+
+        @keyframes option {
+          50% {
+            padding-bottom: 10px;
+          }
+          100% {
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .content2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1;
+
+    .cart {
+      color: white;
+      text-decoration: none;
+      font-family: sans-serif;
+      font-size: 1.8rem;
+    }
+    .menu {
+      display: none;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .nav {
+    padding-right: 20px;
+    padding-left: 50px;
+    .content {
+      justify-content: flex-start;
+      .img {
+        margin-bottom: -20px;
+      }
+      .tex {
+        display: none;
+      }
+    }
+    .content2 {
+      .menu {
+        display: inline-block;
+        margin-left: 50px;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .nav {
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    .content {
+      height: 20px;
+      justify-content: flex-start;
+      img {
+        width: 140px;
+        margin-bottom: -13px;
+      }
+      .tex {
+        display: none;
+      }
+    }
+    .content2 {
+      .cart {
+        font-size: 1.5rem;
+      }
+      .menu {
+        display: inline-block;
+        margin-left: 30px;
+        color: white;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

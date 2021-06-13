@@ -1,0 +1,23 @@
+.body {
+  height: 100vh;
+  // min-height: 100%;
+  width: auto;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  flex-direction: column;
+}
+
+// .hh {
+//   height: 100vh;
+// }
+@media (max-width: 1400px) {
+  .body {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+}
